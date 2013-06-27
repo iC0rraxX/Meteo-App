@@ -1,6 +1,6 @@
 var prevlatitude = "";
 var prevlongitude = "";
-var city = "";
+var city = "Milano";
 var textLat;
 var textLong;
 

@@ -1,0 +1,83 @@
+body{
+	margin: 0;
+	padding: 0;
+       font-weight:200;
+       Text-shadow: black 0px 1px 1px;
+	font-family: HelveticaNeue;
+       text-transform: uppercase;
+}
+
+@font-face {
+	font-family: HelveticaNeue;
+	src: url(Images/HelveticaNeue.ttf);
+}
+
+#Wally{position:absolute; top:0px; left:0px; width:320px; z-index:-99;}
+
+
+#Clock{
+	position:absolute; top:75px; left:0px; width:320px; height:50px; text-align:center; z-index:100;
+       font-size:90px;
+}
+#hour{color:white;}
+#tiret{color:white;}
+#minute{color:white;}
+
+#ampm{
+	position:absolute; top:84px; left:0px; width:320px; height:50px; text-align:center; z-index:100;
+       font-size:70px;
+       opacity:0.25;
+}
+
+#Calendar{
+	position:absolute; top:160px; left:0px; width:320px; height:50px; text-align:center; z-index:100;
+       font-size:17px;
+}
+#date{color:white;}
+#month1{color:white;}
+
+#cityname{
+	position:absolute; top:203px; left:0px; width:320px; height:50px; text-align:center; z-index:100;
+       font-size:24px;
+       color:white;
+}
+
+#weatherIcon{position:absolute; top:207px; left:50px; width:220px; z-index:100;}
+
+#temp{
+	position:absolute; top:340px; left:0px; width:320px; height:50px; text-align:center; z-index:100;
+       font-size:50px;
+       color:white;
+}
+
+
+.main {
+	text-align:center;
+	font-family:Helvetica;
+	font-weight: 200;
+	padding:2px 2px 2px 2px;
+	background-color:transparent;
+}
+
+#daysofweek {
+       position:relative; top:60px; left:63px; width:320px; height:50px; text-align:center; z-index:100;
+	color: white;
+	font-size: 15px;
+	font-family:Helvetica;
+       Text-shadow: black 0px 1px 1px;
+	padding: 0 1px;
+       opacity:0.25;
+}
+#today{
+       position:relative; top:60px; left:63px; width:320px; height:50px; text-align:center; z-index:100;
+	color: white;
+	font-family:Helvetica;
+	font-size: 15px;
+	padding: 0 1px;
+}
+
+#trans2{-webkit-transform: translate(30px,10px);}
+.month{display:none;}
+.year{display:none;}
+#main td{color:white;}
+#main tr{color:white;}

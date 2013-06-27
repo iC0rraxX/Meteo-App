@@ -1,0 +1,43 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="Style.css" type="text/css" media="screen" />
+<script type="text/javascript" charset="utf-8" src="Config.js"></script>
+<script type="text/javascript" charset="utf-8" src="Scripts/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="Scripts/main.js"></script>
+<script type="text/javascript" charset="utf-8" src="Scripts/weekdays.js"></script>
+<script type="text/javascript" charset="utf-8" src="Scripts/location.js"></script>
+
+<img id="Wally" src="/var/mobile/Library/SpringBoard/Converted-LockBackground.jpg" onerror="this.src='Images/wall.jpg';">
+</head>
+
+<body onload="init()">
+
+<script type="text/javascript">
+	var todaydate=new Date(); 
+	var curmonth=todaydate.getMonth()+1; 
+	var curyear=todaydate.getFullYear();
+	document.write(buildCal(curmonth ,curyear, "main", "month", "daysofweek", "days"));
+</script>
+
+<div id="Clock"">
+<a id="hour"></a><a id="tiret">:</a><a id="minute">
+</div>
+
+<div id="ampm"></div>
+
+<div id="Calendar"">
+<a id="date"></a><a id="space"> </a><a id="month1"></a>
+</div>
+
+<div id="cityname"></div>
+<img id="weatherIcon" src="Images/blank.png"></img>
+<div id="temp"></div>
+
+
+
+
+<div id="desc" style="display:none;"></div>
+<div id="weekday" style="display:none;"></div>
+<a id="month"></a> <a id="year"></a>
+
+</body></html>
